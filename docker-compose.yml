@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  rembg:
+    image: ghcr.io/101br03k/rembg:v1.0-pv-3.12.5-slim
+    restart: unless-stopped
+    ports:
+      - 5100:5100
+    container_name: re\mbg
+    network_mode: bridge
