@@ -1,6 +1,8 @@
 FROM python:3.12.7-slim
 
 RUN apt update && apt install wget -y
+RUN mkdir /root/.u2net 
+COPY u2net.onnx /root/.u2net/u2net.onnx
 
 WORKDIR /app
 
